@@ -1,5 +1,6 @@
 import React, { useEffect, useState, VFC } from "react";
 import ReactDOM from "react-dom";
+import Mock from "./mock";
 
 const Clock: VFC = () => {
   const [state, setState] = useState({ date: new Date() });
@@ -259,6 +260,7 @@ const App: VFC = () => {
       <FlavorForm />
       {/* <Reservation /> */}
       <Calculator />
+      <Mock />
     </>
   );
 };
