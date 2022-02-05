@@ -16,7 +16,7 @@ const Mock: VFC = () => {
 
 const FilterableProductTable: VFC<{ products: Product[] }> = ({ products }) => {
   const [state, setState] = useState({
-    filterText: "Foo",
+    filterText: "",
     inStockOnly: false,
   });
   const handleFilterTextChange = (filterText: string) => {
